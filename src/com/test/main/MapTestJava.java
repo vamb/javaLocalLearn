@@ -6,7 +6,7 @@ import java.util.HashMap;
 import java.util.Iterator;
 import java.util.Map;
 
-public class TestJava {
+public class MapTestJava {
     public static void main(String[] args){
         System.out.println("Test one start");
 
