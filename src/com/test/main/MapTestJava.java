@@ -2,9 +2,7 @@ package com.test.main;
 
 import com.test.bean.Student;
 
-import java.util.HashMap;
-import java.util.Iterator;
-import java.util.Map;
+import java.util.*;
 
 public class MapTestJava {
     public static void main(String[] args){
@@ -76,5 +74,26 @@ public class MapTestJava {
                     +entry.getValue());
         }
 
+        System.out.println("*******************");
+
+        Map<String, String> mapTable = new Hashtable<String, String>();
+        for(int i=0; i<4; i++){
+            mapTable.put("key"+i, "value"+i);
+        }
+
+        for(Map.Entry<String, String> entry: mapTable.entrySet()){
+            System.out.println("key= "+entry.getKey()+" value= "+entry.getValue());
+        }
+
+
+        System.out.println("-------------------------------");
+
+        List<String> lList = new LinkedList<String>();
+        for(int i=0;i<4;i++){
+            lList.add("lListItem"+i);
+        }
+        for(String str: lList){
+            System.out.println(str);
+        }
     }
 }

@@ -7,6 +7,10 @@ public class Student {
 
     public Student(){}
 
+    public Student (String name){
+        this.name = name;
+    }
+
     public Student(String name, Integer age){
         this.name  = name;
         this.age = age;
@@ -41,4 +45,5 @@ public class Student {
     public void setAddress(String address) {
         this.address = address;
     }
+
 }
