@@ -26,5 +26,18 @@ public class TestJava {
             Map.Entry<String, String> entry = iterator.next();
             System.out.println("key= "+entry.getKey()+" and value= "+ entry.getValue());
         }
+
+
+        System.out.println("");
+        System.out.println("推荐，尤其是容量大时, 通过Map.entrySet遍历key和value");
+        for(Map.Entry<String, String> entry: testMap.entrySet()){
+            System.out.println("key= "+entry.getKey()+" value= "+entry.getValue());
+        }
+
+        System.out.println("");
+        System.out.println("第四种， 通过Map.values()来遍历，但是不能遍历key");
+        for( String v: testMap.values()){
+            System.out.println("values= "+v);
+        }
     }
 }
