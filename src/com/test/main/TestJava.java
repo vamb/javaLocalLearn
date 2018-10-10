@@ -1,5 +1,7 @@
 package com.test.main;
 
+import com.test.bean.Student;
+
 import java.util.HashMap;
 import java.util.Iterator;
 import java.util.Map;
@@ -39,5 +41,40 @@ public class TestJava {
         for( String v: testMap.values()){
             System.out.println("values= "+v);
         }
+
+        System.out.println("");
+        System.out.println( testMap.size());
+
+        for (Map.Entry<String, String> entry: testMap.entrySet()) {
+            System.out.println(entry.getKey()+"  "+entry.getValue());
+        }
+
+        System.out.println("============================================");
+        Map<Student, String> map = new HashMap<Student, String>();
+        for(int i =0;i<4;i ++){
+            map.put(new Student("name"+i, i, "address"+i), "String"+i);
+        }
+
+        System.out.println("\n1");
+        for(Map.Entry<Student, String> entry: map.entrySet()){
+            System.out.println(entry.getKey().getName()+" "+entry.getKey().getAge()+" "+entry.getKey().getAddress()+" "
+                    +entry.getValue());
+        }
+        System.out.println("\n2");
+        for(String value: map.values()){
+            System.out.println(value);
+        }
+        System.out.println("\n3");
+        for(Student stuKey: map.keySet()){
+            System.out.println(stuKey.getName()+" "+stuKey.getAge()+" "+stuKey.getAddress()+" "+map.get(stuKey));
+        }
+        System.out.println("\n4");
+        Iterator<Map.Entry<Student, String>> iterator2 = map.entrySet().iterator();
+        while (iterator2.hasNext()){
+            Map.Entry<Student, String> entry = iterator2.next();
+            System.out.println(entry.getKey().getName()+" "+entry.getKey().getAge()+" "+entry.getKey().getAddress()+" "
+                    +entry.getValue());
+        }
+
     }
 }

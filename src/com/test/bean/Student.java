@@ -12,6 +12,12 @@ public class Student {
         this.age = age;
     }
 
+    public Student (String name, Integer age, String address){
+        this.name = name;
+        this.age = age;
+        this.address = address;
+    }
+
     public String getName() {
         return name;
     }
