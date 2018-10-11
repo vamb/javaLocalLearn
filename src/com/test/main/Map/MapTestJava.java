@@ -1,4 +1,4 @@
-package com.test.main;
+package com.test.main.Map;
 
 import com.test.bean.Student;
 
@@ -85,6 +85,11 @@ public class MapTestJava {
             System.out.println("key= "+entry.getKey()+" value= "+entry.getValue());
         }
 
+        Iterator<Map.Entry<Student, String>> it = map.entrySet().iterator();
+        while(it.hasNext()){
+            Map.Entry<Student, String> entry = it.next();
+            System.out.println("ppppp key= "+ entry.getKey().getName()+entry.getKey().getAge()+entry.getKey().getAddress()+ " qqqqq value= "+entry.getValue());
+        }
 
         System.out.println("-------------------------------");
 

@@ -1,4 +1,4 @@
-package com.test.main;
+package com.test.main.Map;
 
 import com.test.bean.Student;
 
