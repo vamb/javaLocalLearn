@@ -1,4 +1,4 @@
-package com.test.reflaction;
+package com.test.main.reflaction;
 
 import com.test.bean.Student;
 

@@ -1,4 +1,4 @@
-package com.test.reflaction;
+package com.test.main.reflaction;
 
 import java.lang.reflect.Array;
 import java.lang.reflect.Method;
