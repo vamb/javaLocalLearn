@@ -5,7 +5,7 @@ import com.test.utils.Constant;
 import java.io.File;
 import java.io.IOException;
 
-public class FileTestJava {
+public class FileTest1Java {
 
     final static String FILE_PATH = "D:"+ Constant.SEPARATOR+"workspace"+Constant.SEPARATOR+"javaLocalLearn"+Constant.SEPARATOR+
             "src"+Constant.SEPARATOR+"resource"+Constant.SEPARATOR+"file";
