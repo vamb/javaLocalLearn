@@ -46,4 +46,9 @@ public class Student {
         this.address = address;
     }
 
+    public String toString(){
+        String str = "Student name: "+this.getName()+" age: "+this.getAge()
+                +" address: "+this.getAddress();
+        return str;
+    }
 }
